@@ -1,0 +1,665 @@
+{
+  "bagimg":"/static/1_0/bag.png",
+  "havebag":false,
+  "scenes":{
+    "livingroom": {
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": "kitchen",
+      "name": "livingroom",
+      "imgsrc": "/static/1_1/livingroom.png"
+    },
+    "kitchen": {
+      "up": null,
+      "down": null,
+      "left": "livingroom",
+      "right": null,
+      "name": "kitchen",
+      "imgsrc": "/static/1_2/kitchen.png"
+    },
+    "tvclose": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "tvclose",
+      "imgsrc": "/static/1_1/tvclose.png"
+    },
+    "tvopen": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "tvopen",
+      "imgsrc": "/static/1_1/tvopen.png"
+    },
+    "aredbag": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "aredbag",
+      "imgsrc": "/static/1_1/aredbag.png"
+    },
+    "amicro": {
+      "up": null,
+      "down": "kitchen",
+      "left": null,
+      "right": null,
+      "name": "amicro",
+      "imgsrc": "/static/1_2/amicro.png"
+    },
+    "bmicro": {
+      "up": null,
+      "down": "kitchen",
+      "left": null,
+      "right": null,
+      "name": "bmicro",
+      "imgsrc": "/static/1_2/bmicro.png"
+    },
+    "amat": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "amat",
+      "imgsrc": "/static/1_1/amat.png"
+    },
+    "afterclick": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "afterclick",
+      "imgsrc": "/static/1_1/afterclick.png"
+    },
+    "apaper": {
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "apaper",
+      "imgsrc": "/static/1_1/apaper.png"
+    },
+    "start11": {
+      "up": null,
+      "down": null,
+      "left": "start4",
+      "right": "start21",
+      "name": "start11",
+      "imgsrc": "/static/museum/start1_1.png"
+    },
+    "end11": {
+      "up": null,
+      "down": null,
+      "left": "start4",
+      "right": "start21",
+      "name": "end11",
+      "imgsrc": "/static/museum/end1_1.png"
+    },
+    "end12": {
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": null,
+      "name": "end12",
+      "imgsrc": "/static/museum/end1_2.png"
+    },
+    "start21": {
+      "up": null,
+      "down": null,
+      "left": "start11",
+      "right": "start31",
+      "name": "start21",
+      "imgsrc": "/static/museum/start2_1.png"
+    },
+    "start31": {
+      "up": null,
+      "down": null,
+      "left": "start21",
+      "right": "start4",
+      "name": "start31",
+      "imgsrc": "/static/museum/start3_1.png"
+    },
+    "start4": {
+      "up": null,
+      "down": null,
+      "left": "start31",
+      "right": "start11",
+      "name": "start4",
+      "imgsrc": "/static/museum/start4.png"
+    }
+  },
+    "linkobjs": [
+      {
+        "from": "kitchen",
+        "name": "micro",
+        "x": 396,
+        "y": 230,
+        "w": 192,
+        "h": 147,
+        "link": "amicro"
+      },
+      {
+        "from": "amicro",
+        "name": "microdoor",
+        "x": 586,
+        "y": 221,
+        "w": 636,
+        "h": 444,
+        "link": "bmicro"
+      },
+      {
+        "from": "livingroom",
+        "name": "tv",
+        "x": 0,
+        "y": 496,
+        "w": 156,
+        "h": 300,
+        "link": "tvclose"
+      },
+      {
+        "from": "livingroom",
+        "name": "redbag",
+        "x": 968,
+        "y": 315,
+        "w": 168,
+        "h": 156,
+        "imgsrc": "/static/1_1/redbag.png",
+        "link": "aredbag"
+      },
+      {
+        "from": "",
+        "name": "emptyredbag",
+        "x": 298,
+        "y": 216,
+        "w": 1056,
+        "h": 660,
+        "link": "afterclick"
+      },
+      {
+        "from": "",
+        "name": "mat",
+        "x": 1050,
+        "y": 430,
+        "w": 78,
+        "h": 30,
+        "imgsrc": "/static/1_1/mat.png",
+        "link": "amat"
+      },
+      {
+        "from": "",
+        "name": "bmat",
+        "x": 585,
+        "y": 592,
+        "w": 390,
+        "h": 162,
+        "link": "amat"
+      },
+      {
+        "from": "",
+        "name": "pwok",
+        "x": 1176,
+        "y": 367,
+        "w": 162,
+        "h": 108,
+        "link": "tvopen"
+      },
+      {
+        "from": "bmicro",
+        "name": "openmicrodoor",
+        "x": 430,
+        "y": 120,
+        "w": 150,
+        "h": 642,
+        "link": "amicro"
+      },
+      {
+        "from": "",
+        "name": "lbluecup",
+        "x": 1050,
+        "y": 383,
+        "w": 72,
+        "h": 66,
+        "imgsrc": "/static/1_1/bluecup.png",
+        "link": "amat"
+      },
+      {
+        "from": "livingroom",
+        "name": "paper",
+        "x": 1180,
+        "y": 420,
+        "w": 220,
+        "h": 100,
+        "link": "apaper"
+      }
+      ],
+      "canGetObjs":[
+        {
+          "from": "kitchen",
+          "name": "orange",
+          "x": 630,
+          "y": 218,
+          "w": 42,
+          "h": 144,
+          "imgsrc": "/static/1_2/orange.png",
+          "bagimg": "/static/prop/feature/orange.png",
+          "isget": false,
+          "text":"我最喜欢这种橙汁，酸酸甜甜很好喝!",
+          "partner": ""
+        }, 
+        {
+          "from": "kitchen",
+          "name": "bluecup",
+          "x": 756,
+          "y": 295,
+          "w": 78,
+          "h": 65,
+          "imgsrc": "/static/1_2/bluecup.png",
+          "bagimg": "/static/prop/feature/bluecup.png",
+          "isget": false,
+          "text":"我的杯子",
+          "partner": ""
+        },
+        {
+          "from": "livingroom",
+          "name": "egg",
+          "x": 380,
+          "y": 320,
+          "w": 48,
+          "h": 78,
+          "imgsrc": "/static/1_1/egg.png",
+          "isget": false,
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "cabinetopen",
+          "x": 222,
+          "y": 424,
+          "w": 186,
+          "h": 126,
+          "imgsrc": "/static/1_1/cabinetopen.png",
+          "isget": false,
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "redQQ",
+          "x": 265,
+          "y": 424,
+          "w": 84,
+          "h": 30,
+          "imgsrc": "/static/1_1/redQQ.png",
+          "bagimg": "/static/prop/feature/redQQ.png",
+          "isget": false,
+          "text":"草莓味QQ糖",
+          "partner": ""
+        },
+        {
+          "from": "aredbag",
+          "name": "yellowQQ",
+          "x": 628,
+          "y": 432,
+          "w": 270,
+          "h": 192,
+          "imgsrc": "/static/1_1/yellowQQ.png",
+          "bagimg": "/static/prop/feature/yellowQQ.png",
+          "isget": false,
+          "text":"菠萝味QQ糖",
+          "partner": ""
+        },
+        {
+          "from": "aredbag",
+          "name": "snow",
+          "x": 567,
+          "y": 228,
+          "w": 540,
+          "h": 408,
+          "imgsrc": "/static/1_1/snow.png",
+          "bagimg": "/static/prop/feature/snow.png",
+          "isget": false,
+          "text":"看起来完全透明的隐雪饮料，其实能喝到隐形的颗粒哦!",
+          "partner": ""
+        },
+        {
+          "from": "aredbag",
+          "name": "paopaot",
+          "x": 963,
+          "y": 426,
+          "w": 168,
+          "h": 204,
+          "imgsrc": "/static/1_1/paopaot.png",
+          "bagimg": "/static/prop/feature/paopaot.png",
+          "isget": false,
+          "text":"泡泡糖",
+          "partner": ""
+        },
+        {
+          "from": "tvopen",
+          "name": "fishnet",
+          "x": 836,
+          "y": 480,
+          "w": 228,
+          "h": 78,
+          "imgsrc": "/static/1_1/fishnet.png",
+          "bagimg": "/static/prop/feature/fishnet.png",
+          "isget": false,
+          "text":"在广场捞鱼带回来的小鱼网",
+          "partner": ""
+        },
+        {
+          "from": "tvopen",
+          "name": "orangeQQ",
+          "x": 1190,
+          "y": 363,
+          "w": 210,
+          "h": 186,
+          "imgsrc": "/static/1_1/orangeQQ.png",
+          "bagimg": "/static/prop/feature/orangeQQ.png",
+          "isget": false,
+          "text":"橙子味QQ糖",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "blueQQ",
+          "x": 805,
+          "y": 190,
+          "w": 192,
+          "h": 204,
+          "imgsrc": "/static/1_1/blueQQ.png",
+          "bagimg": "/static/prop/feature/blueQQ.png",
+          "isget": false,
+          "text":"蓝莓味QQ糖",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "greenQQ",
+          "x": 900,
+          "y": 340,
+          "w": 192,
+          "h": 174,
+          "imgsrc": "/static/1_1/greenQQ.png",
+          "bagimg": "/static/prop/feature/greenQQ.png",
+          "isget": false,
+          "text":"青苹果味QQ糖",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "manyfish",
+          "x": 743,
+          "y": 492,
+          "w": 387,
+          "h": 254,
+          "imgsrc": "/static/1_2/manyfish.png",
+          "bagimg": "/static/prop/feature/manyfish.png",
+          "isget": false,
+          "text":"好多好多好多鱼",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "whitechild",
+          "x": 753,
+          "y": 229,
+          "w": 402,
+          "h": 324,
+          "imgsrc": "/static/1_1/whitechild.png",
+          "bagimg": "/static/prop/feature/whitechild.png",
+          "isget": false,
+          "text":"隐雪饮料里的透明颗粒",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "fishchild",
+          "x": 753,
+          "y": 229,
+          "w": 402,
+          "h": 324,
+          "imgsrc": "/static/1_1/fishchild.png",
+          "bagimg": "/static/prop/feature/fishchild.png",
+          "isget": false,
+          "text":"寿司上的橙色鱼籽",
+          "partner": ""
+        },
+        {
+          "from": "",
+          "name": "miqi",
+          "x": 450,
+          "y": 590,
+          "w": 120,
+          "h": 108,
+          "imgsrc": "/static/1_1/miqi.png",
+          "bagimg": "/static/prop/feature/miqi.png",
+          "isget": false,
+          "text":"还没起飞的老鼠店员",
+          "partner": "paopaot"
+        }
+      ],
+      "cantGetObjs":[
+        {
+          "from": "livingroom",
+          "name": "cabinet",
+          "x": 252,
+          "y": 430,
+          "w": 150,
+          "h": 90,
+          "partner": null
+        },
+        {
+          "from": "amat",
+          "name": "cmat",
+          "x": 550,
+          "y": 364,
+          "w": 756,
+          "h": 576,
+          "partner": "bluecup"
+        },
+        {
+          "from": "kitchen",
+          "name": "circular",
+          "x": 90,
+          "y": 210,
+          "w": 90,
+          "h": 102,
+          "partner": null
+        },
+        {
+          "from": "livingroom",
+          "name": "why",
+          "x": 1555,
+          "y": 450,
+          "w": 126,
+          "h": 96,
+          "partner": null
+        },
+        {
+          "from": "livingroom",
+          "name": "notebook",
+          "x": 250,
+          "y": 360,
+          "w": 108,
+          "h": 48,
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "cuponmat",
+          "x": 558,
+          "y": 108,
+          "w": 696,
+          "h": 714,
+          "imgsrc": "/static/1_1/cuponmat.png",
+          "partner": "fishnet"
+        },
+        {
+          "from": "",
+          "name": "snowincup",
+          "x": 558,
+          "y": 108,
+          "w": 696,
+          "h": 714,
+          "imgsrc": "/static/1_1/snowincup.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "orangeincup",
+          "x": 558,
+          "y": 108,
+          "w": 696,
+          "h": 714,
+          "imgsrc": "/static/1_1/orangeincup.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "afishnet",
+          "x": 693,
+          "y": 175,
+          "w": 822,
+          "h": 486,
+          "imgsrc": "/static/1_1/afishnet.png",
+          "partner": "snow"
+        },
+        {
+          "from": "bmicro",
+          "name": "emptyctn",
+          "x": 743,
+          "y": 491,
+          "w": 387,
+          "h": 254,
+          "partner": "fishchild"
+        },
+        {
+          "from": "",
+          "name": "fishchildincup",
+          "x": 744,
+          "y": 492,
+          "w": 384,
+          "h": 252,
+          "imgsrc": "/static/1_2/fishchildincup.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "whitechild2",
+          "x": 753,
+          "y": 229,
+          "w": 402,
+          "h": 324,
+          "imgsrc": "/static/1_1/whitechild.png",
+          "partner": "orange"
+        },
+        {
+          "from": "",
+          "name": "pclick",
+          "x": 1340,
+          "y": 228,
+          "w": 144,
+          "h": 144,
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "pclick2",
+          "x": 1340,
+          "y": 414,
+          "w": 144,
+          "h": 144,
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "dred",
+          "x": 169,
+          "y": 175,
+          "w": 1326,
+          "h": 264,
+          "imgsrc": "/static/1_1/dred.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "dorange",
+          "x": 216,
+          "y": 223,
+          "w": 1230,
+          "h": 222,
+          "imgsrc": "/static/1_1/dorange.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "dyellow",
+          "x": 258,
+          "y": 282,
+          "w": 1188,
+          "h": 210,
+          "imgsrc": "/static/1_1/dyellow.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "dgreen",
+          "x": 330,
+          "y": 336,
+          "w": 1116,
+          "h": 180,
+          "imgsrc": "/static/1_1/dgreen.png",
+          "partner": null
+        },
+        {
+          "from": "",
+          "name": "dblue",
+          "x": 360,
+          "y": 393,
+          "w": 1050,
+          "h": 174,
+          "imgsrc": "/static/1_1/dblue.png",
+          "partner": null
+        },
+        {
+          "from": "apaper",
+          "name": "dcolor",
+          "x": 276,
+          "y": 180,
+          "w": 1050,
+          "h": 340,
+          "partner": null
+        }
+      ],
+      "instru":[
+        {
+          "from": "kitchen",
+          "name": "mom",
+          "x": 1000,
+          "y": 170,
+          "w": 270,
+          "h": 648,
+          "once": false,
+          "text": [
+            "快吃饭了，别吃那么多零食！",
+            "你好好学习，就能找到更多零食哦。"
+          ]
+        },
+        {
+          "from": "kitchen",
+          "name": "circularsay",
+          "x": 90,
+          "y": 210,
+          "w": 90,
+          "h": 102,
+          "once": true,
+          "text": [
+            "本来爸爸妈妈计划今天带我去这里吃饭的……",
+            "但爸爸已经出差好久了，什么时候能回来呢？"
+          ]
+        }
+      ]
+}

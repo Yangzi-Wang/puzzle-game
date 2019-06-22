@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>零食博物馆</title><script src=https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js></script><link href=/css/app.e14bb065.css rel=preload as=style><link href=/js/app.4ec877ca.js rel=preload as=script><link href=/js/chunk-vendors.317e95d1.js rel=preload as=script><link href=/css/app.e14bb065.css rel=stylesheet></head><body><noscript><strong>We're sorry but hello-world doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>//供flash调用的函数
+    function BookCall(flag) {
+      if (flag === 1) {//通关
+        bus.$emit("flashGame", 1);
+      } else if (flag === 2) {
+        bus.$emit("flashGame", 2);
+      }
+    }
+    function CardCall(flag) {
+      if (flag === 1) {
+        bus.$emit("flashGame", 3);
+      } else if (flag === 2) {
+        bus.$emit("flashGame", 4);
+      } else if (flag === 3) {
+        bus.$emit("flashGame", 5);
+      } else if (flag === 4) {
+        bus.$emit("flashGame", 6);
+      } else if (flag === 0) {
+        bus.$emit("flashGame", 7);
+      }
+    }
+    function ChaseCall(flag){
+      if(flag===1){
+        bus.$emit("flashGame", 8);
+      }else if(flag===2){
+        bus.$emit("flashGame", 9);
+      }
+    }
+
+/*
+    var savegame=function(data) {
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:8080/server.js",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        dataType: "json",
+        complete: function (msg) {
+          //console.log(msg)
+        }
+      });
+    }*/</script><script src=/js/chunk-vendors.317e95d1.js></script><script src=/js/app.4ec877ca.js></script></body></html>

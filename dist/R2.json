@@ -1,0 +1,526 @@
+{
+  "bagimg": "/static/2_0/bag.png",
+  "havebag": false,
+  "scenes": {
+    "afterschool":{
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": null,
+      "name": "afterschool",
+      "imgsrc": "/static/2_1/afterschool.png"
+    },
+    "livingroom":{
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": "kitchen",
+      "name": "livingroom",
+      "imgsrc": "/static/2_1/livingroom.png"
+    },
+    "kitchen":{
+      "up": null,
+      "down": null,
+      "left": "livingroom",
+      "right": "bedroom",
+      "name": "kitchen",
+      "imgsrc": "/static/2_2/kitchen.png"
+    },
+    "bedroom":{
+      "up": null,
+      "down": null,
+      "left": "kitchen",
+      "right": null,
+      "name": "bedroom",
+      "imgsrc": "/static/2_3/bedroom.png"
+    },
+    "adesk":{
+      "up": null,
+      "down": "livingroom",
+      "left": null,
+      "right": null,
+      "name": "adesk",
+      "imgsrc": "/static/2_1/adesk.png"
+    },
+    "start21": {
+      "up": null,
+      "down": null,
+      "left": "end11",
+      "right": "start31",
+      "name": "start21",
+      "imgsrc": "/static/museum/start2_1.png"
+    },
+    "end21": {
+      "up": null,
+      "down": null,
+      "left": "end11",
+      "right": "start31",
+      "name": "end21",
+      "imgsrc": "/static/museum/end2_1.png"
+    },
+    "end11": {
+      "up": null,
+      "down": null,
+      "left": "start4",
+      "right": "start21",
+      "name": "end11",
+      "imgsrc": "/static/museum/end1_1.png"
+    },
+    "end12": {
+      "up": null,
+      "down": "end11",
+      "left": null,
+      "right": null,
+      "name": "end12",
+      "imgsrc": "/static/museum/end1_2.png"
+    },
+    "start31": {
+      "up": null,
+      "down": null,
+      "left": "start21",
+      "right": "start4",
+      "name": "start31",
+      "imgsrc": "/static/museum/start3_1.png"
+    },
+    "start4": {
+      "up": null,
+      "down": null,
+      "left": "start31",
+      "right": "end11",
+      "name": "start4",
+      "imgsrc": "/static/museum/start4.png"
+    }
+  },
+  "linkobjs": [
+    {
+      "from": "livingroom",
+      "name": "desk",
+      "x": 1170,
+      "y": 520,
+      "w": 230,
+      "h": 83,
+      "link": "adesk"
+    },
+    {
+      "from": "end11",
+      "name": "museumup",
+      "x": 1200,
+      "y": 10,
+      "w": 70,
+      "h": 40,
+      "imgsrc":"/static/museum/up.png",
+      "zindex":1,
+      "link": "end12"
+    }
+  ],
+  "canGetObjs": [
+    {
+      "from": "livingroom",
+      "name": "lrnote",
+      "x": 597,
+      "y": 275,
+      "w": 60,
+      "h": 54,
+      "imgsrc": "/static/2_1/lrnote.png",
+      "bagimg": "/static/prop/feature2/lrnote.png",
+      "isget": false,
+      "text":"'乐乐，妈妈今晚临时加班。我在冰箱里放了吃的，饿了就自己解决晚饭吧。'",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "key",
+      "x": 1224,
+      "y": 166,
+      "w": 30,
+      "h": 66,
+      "imgsrc": "/static/2_1/key.png",
+      "bagimg": "/static/prop/feature2/key.png",
+      "isget": false,
+      "text":"抽屉钥匙",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "cabinetopen",
+      "x": 222,
+      "y": 528,
+      "w": 180,
+      "h": 144,
+      "imgsrc": "/static/2_1/cabinetopen.png",
+      "isget": false,
+      "partner": ""
+    },
+    {
+      "from": "bedroom",
+      "name": "pen",
+      "x": 1306,
+      "y": 418,
+      "w": 42,
+      "h": 48,
+      "imgsrc": "/static/2_3/pen.png",
+      "bagimg": "/static/prop/feature2/pen.png",
+      "isget": false,
+      "text":"中华牌铅笔",
+      "partner": ""
+    },
+    {
+      "from": "bedroom",
+      "name": "laverbag",
+      "x": 829,
+      "y": 430,
+      "w": 66,
+      "h": 48,
+      "imgsrc": "/static/2_3/laverbag.png",
+      "bagimg": "/static/prop/feature2/laverbag.png",
+      "isget": false,
+      "text":"吃空的紫菜包装，但只要用形状颜色合适的东西稍作填充就能迷惑视线!",
+      "partner": "purple"
+    },
+    {
+      "from": "kitchen",
+      "name": "kcnote",
+      "x": 200,
+      "y": 690,
+      "w": 60,
+      "h": 30,
+      "imgsrc": "/static/2_2/kcnote.png",
+      "bagimg": "/static/prop/feature2/kcnote.png",
+      "isget": false,
+      "text":"被弄湿过，现在已经变硬，字迹糊得看不清了。妈妈原来写了什么呢？",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "ribbon",
+      "x": 252,
+      "y": 534,
+      "w": 120,
+      "h": 30,
+      "imgsrc": "/static/2_1/ribbon.png",
+      "bagimg": "/static/prop/feature2/ribbon.png",
+      "isget": false,
+      "text":"装饰彩带",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "cut",
+      "x": 281,
+      "y": 534,
+      "w": 54,
+      "h": 30,
+      "imgsrc": "/static/2_1/cut.png",
+      "bagimg": "/static/prop/feature2/cut.png",
+      "isget": false,
+      "text":"万能小助手剪刀",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "writing",
+      "x": 432,
+      "y": 456,
+      "w": 492,
+      "h": 222,
+      "imgsrc": "/static/2_1/writing.png",
+      "bagimg": "/static/prop/feature2/writing.png",
+      "isget": false,
+      "text":"'快把茶几装饰一下吧！'",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "card",
+      "x": 570,
+      "y": 107,
+      "w": 684,
+      "h": 390,
+      "imgsrc": "/static/2_1/card.png",
+      "bagimg": "/static/prop/feature2/card.png",
+      "isget": false,
+      "text":"'生日快乐！快去冰箱拿蛋糕吧。'",
+      "partner": ""
+    },
+    {
+      "from": "",
+      "name": "lrkcnote",
+      "x": 1215,
+      "y": 299,
+      "w": 48,
+      "h": 24,
+      "imgsrc": "/static/2_1/lrkcnote.png",
+      "bagimg": "/static/prop/feature2/kcnote.png",
+      "isget": false,
+      "text":"被弄湿过，现在已经变硬，字迹糊得看不清了。妈妈原来写了什么呢？",
+      "partner": "cut"
+    },
+    {
+      "from": "",
+      "name": "purple",
+      "x": 1194,
+      "y": 90,
+      "w": 120,
+      "h": 156,
+      "imgsrc": "/static/2_1/purple.png",
+      "bagimg": "/static/prop/feature2/purple.png",
+      "isget": false,
+      "text":"闻起来不怎么样，但已经有紫菜的质感了。",
+      "partner": "laverbag"
+    }
+  ],
+  "cantGetObjs": [
+    {
+      "from": "livingroom",
+      "name": "cabinet",
+      "x": 252,
+      "y": 530,
+      "w": 150,
+      "h": 90,
+      "partner": "key"
+    },
+    {
+      "from": "livingroom",
+      "name": "calendar",
+      "x": 300,
+      "y": 320,
+      "w": 80,
+      "h": 70,
+      "partner": null
+    },
+    {
+      "from": "adesk",
+      "name": "emptynote",
+      "x": 432,
+      "y": 510,
+      "w": 492,
+      "h": 168,
+      "imgsrc": "/static/2_1/noteondesk.png",
+      "partner": "pen"
+    },
+    {
+      "from": "",
+      "name": "bird",
+      "x": 1200,
+      "y": 143,
+      "w": 72,
+      "h": 66,
+      "imgsrc": "/static/2_1/bird.png",
+      "partner": null
+    },
+    {
+      "from": "livingroom",
+      "name": "birdclock",
+      "x": 1130,
+      "y": 83,
+      "w": 170,
+      "h": 290,
+      "partner": "kcnote"
+    },
+    {
+      "from": "livingroom",
+      "name": "gouzi",
+      "x": 1330,
+      "y": 604,
+      "w": 40,
+      "h": 40,
+      "partner": "ribbon"
+    },
+    {
+      "from": "livingroom",
+      "name": "gouzi2",
+      "x": 1090,
+      "y": 560,
+      "w": 40,
+      "h": 50,
+      "partner": "ribbon"
+    },
+    {
+      "from": "",
+      "name": "ribbon2",
+      "x": 1056,
+      "y": 588,
+      "w": 498,
+      "h": 168,
+      "imgsrc": "/static/2_1/ribbon2.png",
+      "partner": null
+    },
+    {
+      "from": "adesk",
+      "name": "ink",
+      "x": 1032,
+      "y": 115,
+      "w": 432,
+      "h": 474,
+      "imgsrc": "/static/2_1/ink.png",
+      "partner": null
+    },
+    {
+      "from": "adesk",
+      "name": "cover",
+      "x": 1158,
+      "y": 115,
+      "w": 168,
+      "h": 138,
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "back",
+      "x": 1176,
+      "y": 139,
+      "w": 144,
+      "h": 42,
+      "imgsrc": "/static/2_1/back.png",
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "inknotewhite",
+      "x": 1194,
+      "y": 25,
+      "w": 120,
+      "h": 348,
+      "imgsrc": "/static/2_1/inknotewhite.png",
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "openink",
+      "x": 1032,
+      "y": 145,
+      "w": 636,
+      "h": 444,
+      "imgsrc": "/static/2_1/openink.png",
+      "zindex":1,
+      "partner": "lrkcnote"
+    },
+    {
+      "from": "kitchen",
+      "name": "openrefri",
+      "x": 186,
+      "y": 247,
+      "w": 84,
+      "h": 198,
+      "partner": null
+    },
+    {
+      "from": "kitchen",
+      "name": "bandage",
+      "x": 186,
+      "y": 247,
+      "w": 84,
+      "h": 198,
+      "imgsrc": "/static/2_2/bandage.png",
+      "partner": null
+    },
+    {
+      "from": "kitchen",
+      "name": "lock",
+      "x": 204,
+      "y": 307,
+      "w": 48,
+      "h": 156,
+      "imgsrc": "/static/2_2/lock.png",
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "unlock",
+      "x": 204,
+      "y": 307,
+      "w": 48,
+      "h": 168,
+      "imgsrc": "/static/2_2/unlock.png",
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "refri",
+      "x": 25,
+      "y": 84,
+      "w": 414,
+      "h": 642,
+      "imgsrc": "/static/2_2/refri.png",
+      "partner": null
+    },
+    {
+      "from": "",
+      "name": "cake",
+      "x": 160,
+      "y": 250,
+      "w": 138,
+      "h": 102,
+      "partner": null
+    },
+    {
+      "from": "end11",
+      "name": "bookpiece",
+      "x": 1020,
+      "y": 0,
+      "w": 636,
+      "h": 660,
+      "imgsrc":"/static/museum/bookpiece.gif",
+      "partner": null
+    }
+  ],
+  "instru": [
+    {
+      "from": "kitchen",
+      "name": "wallpic",
+      "x": 1200,
+      "y": 0,
+      "w": 680,
+      "h": 400,
+      "once": false,
+      "text": [
+        "我画得漂亮吧！这样妈妈在等菜焖好的时候就不会无聊啦！"
+      ]
+    },
+    {
+      "from": "adesk",
+      "name": "emptynotesay",
+      "x": 440,
+      "y": 450,
+      "w": 450,
+      "h": 240,
+      "once": true,
+      "text": [
+        "上面好像有痕迹，怎么让它显现出来呢？"
+      ]
+    },
+    {
+      "from": "livingroom",
+      "name": "birdclocksay",
+      "x": 1130,
+      "y": 83,
+      "w": 170,
+      "h": 290,
+      "text": [
+        "妈妈会把卡片暂时塞进信箱，看来最近清理过了。"
+      ]
+    },
+    {
+      "from": "livingroom",
+      "name": "gouzisay",
+      "x": 1330,
+      "y": 604,
+      "w": 40,
+      "h": 40,
+      "text": [
+        "钩子？用来干嘛的？"
+      ]
+    },
+    {
+      "from": "livingroom",
+      "name": "gouzisay2",
+      "x": 1090,
+      "y": 560,
+      "w": 40,
+      "h": 50,
+      "text": [
+        "钩子？用来干嘛的？"
+      ]
+    }
+  ]
+}

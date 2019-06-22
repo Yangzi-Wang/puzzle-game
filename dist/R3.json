@@ -1,0 +1,1323 @@
+{
+    "bagimg": "/static/3_0/bag.png",
+    "havebag": false,
+    "scenes": {
+      "livingroom":{
+        "up": null,
+        "down": null,
+        "left": "momroom",
+        "right": "kitchen",
+        "name": "livingroom",
+        "imgsrc": "/static/3_1/livingroom.png"
+      },
+      "kitchen":{
+        "up": null,
+        "down": null,
+        "left": "livingroom",
+        "right": "bedroom",
+        "name": "kitchen",
+        "imgsrc": "/static/3_2/kitchen.png"
+      },
+      "bedroom":{
+        "up": null,
+        "down": null,
+        "left": "kitchen",
+        "right": "momroom",
+        "name": "bedroom",
+        "imgsrc": "/static/3_3/bedroom.png"
+      },
+      "momroom":{
+        "up": null,
+        "down": null,
+        "left": "bedroom",
+        "right": "livingroom",
+        "name": "momroom",
+        "imgsrc": "/static/3_4/momroom.png"
+      },
+      "apenguinbox":{
+        "up": null,
+        "down": "livingroom",
+        "left": null,
+        "right": null,
+        "name": "apenguinbox",
+        "imgsrc": "/static/3_1/apenguinbox.png"
+      },
+      "atoybox":{
+        "up": null,
+        "down": "bedroom",
+        "left": null,
+        "right": null,
+        "name": "atoybox",
+        "imgsrc": "/static/3_3/atoybox.png"
+      },
+      "amirror":{
+        "up": null,
+        "down": "momroom",
+        "left": null,
+        "right": null,
+        "name": "amirror",
+        "imgsrc": "/static/3_4/amirror.png"
+      },
+      "ajigsaw":{
+        "up": null,
+        "down": "livingroom",
+        "left": null,
+        "right": null,
+        "name": "ajigsaw",
+        "imgsrc": "/static/3_1/jigsaw/ajigsaw.png"
+      },
+      "amagic":{
+        "up": null,
+        "down": "bedroom",
+        "left": null,
+        "right": null,
+        "name": "amagic",
+        "imgsrc": "/static/3_3/amagic.png"
+      },
+      "memorybg1":{
+        "up": null,
+        "down": "",
+        "left": null,
+        "right": "memorybg2",
+        "name": "memorybg1",
+        "imgsrc": "/static/3_5/memorybg1.png"
+      },
+      "memorybg2":{
+        "up": null,
+        "down": "",
+        "left": "memorybg1",
+        "right": "memorybg3",
+        "name": "memorybg2",
+        "imgsrc": "/static/3_5/memorybg2.png"
+      },
+      "memorybg3":{
+        "up": null,
+        "down": "",
+        "left": "memorybg2",
+        "right": "memorybg4",
+        "name": "memorybg3",
+        "imgsrc": "/static/3_5/memorybg3.png"
+      },
+      "memorybg4":{
+        "up": null,
+        "down": "",
+        "left": "memorybg3",
+        "right": null,
+        "name": "memorybg4",
+        "imgsrc": "/static/3_5/memorybg4.png"
+      },
+      "end21": {
+        "up": null,
+        "down": null,
+        "left": "end11",
+        "right": "start31",
+        "name": "end21",
+        "imgsrc": "/static/museum/end2_1.png"
+      },
+      "end31": {
+        "up": null,
+        "down": null,
+        "left": "end21",
+        "right": "end4",
+        "name": "end31",
+        "imgsrc": "/static/museum/end3_1.png"
+      },
+      "end32": {
+        "up": null,
+        "down": "end31",
+        "left": null,
+        "right": null,
+        "name": "end32",
+        "imgsrc": "/static/museum/end3_2.png"
+      },
+      "end11": {
+        "up": null,
+        "down": null,
+        "left": "start4",
+        "right": "end21",
+        "name": "end11",
+        "imgsrc": "/static/museum/end1_1.png"
+      },
+      "end12": {
+        "up": null,
+        "down": "end11",
+        "left": null,
+        "right": null,
+        "name": "end12",
+        "imgsrc": "/static/museum/end1_2.png"
+      },
+      "start31": {
+        "up": null,
+        "down": null,
+        "left": "end21",
+        "right": "start4",
+        "name": "start31",
+        "imgsrc": "/static/museum/start3_1.png"
+      },
+      "start4": {
+        "up": null,
+        "down": null,
+        "left": "start31",
+        "right": "end11",
+        "name": "start4",
+        "imgsrc": "/static/museum/start4.png"
+      },
+      "end4": {
+        "up": null,
+        "down": null,
+        "left": "end31",
+        "right": "end11",
+        "name": "end4",
+        "imgsrc": "/static/museum/end4.png"
+      }
+    },
+    "linkobjs": [
+      {
+        "from": "livingroom",
+        "name": "penguinbox",
+        "x": 740,
+        "y": 408,
+        "w": 200,
+        "h": 220,
+        "link":"apenguinbox"
+      },
+      {
+        "from": "bedroom",
+        "name": "toybox",
+        "x": 820,
+        "y": 715,
+        "w": 200,
+        "h": 90,
+        "link": "atoybox"
+      },
+      {
+        "from": "momroom",
+        "name": "memorybook",
+        "x": 927,
+        "y": 654,
+        "w": 190,
+        "h": 90,
+        "link": "memorybg1"
+      },
+      {
+        "from": "momroom",
+        "name": "mirror",
+        "x": 105,
+        "y": 250,
+        "w": 183,
+        "h": 240,
+        "link": "amirror"
+      },
+      {
+        "from": "livingroom",
+        "name": "jigsaw",
+        "x": 1143,
+        "y": 537,
+        "w": 315,
+        "h": 66,
+        "link": "ajigsaw"
+      },
+      {
+        "from": "bedroom",
+        "name": "magic",
+        "x": 193,
+        "y": 612,
+        "w": 54,
+        "h": 31,
+        "link": "amagic"
+      },
+      {
+        "from": "end31",
+        "name": "memoryentry",
+        "x": 828,
+        "y": 378,
+        "w": 270,
+        "h": 318,
+        "link": "memorybg1"
+      },
+      {
+        "from": "end11",
+        "name": "museumup",
+        "x": 1200,
+        "y": 10,
+        "w": 70,
+        "h": 40,
+        "imgsrc":"/static/museum/up.png",
+        "zindex":1,
+        "link": "end12"
+      },
+      {
+        "from": "end31",
+        "name": "museumup2",
+        "x": 1240,
+        "y": 10,
+        "w": 70,
+        "h": 40,
+        "imgsrc":"/static/museum/up.png",
+        "zindex":1,
+        "link": "end32"
+      }
+    ],
+    "canGetObjs": [
+      {
+        "from": "",
+        "name": "smallfish",
+        "bagimg": "/static/prop/feature3/smallfish.png",
+        "isget": false,
+        "text":"小鱼干",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "double",
+        "bagimg": "/static/prop/feature3/double.png",
+        "isget": false,
+        "text":"双汇香肠",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "weihua",
+        "bagimg": "/static/prop/feature3/weihua.png",
+        "isget": false,
+        "text":"牛奶味威化饼",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "mwhite",
+        "bagimg": "/static/prop/feature3/mwhite.png",
+        "isget": false,
+        "text":"原味棉花糖",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "mpink",
+        "bagimg": "/static/prop/feature3/mpink.png",
+        "isget": false,
+        "text":"草莓味棉花糖",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "mblack",
+        "bagimg": "/static/prop/feature3/mblack.png",
+        "isget": false,
+        "text":"巧克力味棉花糖",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "moguli",
+        "bagimg": "/static/prop/feature3/moguli.png",
+        "isget": false,
+        "text":"蘑古力，蘑菇形状的松脆小饼干",
+        "partner": ""
+      },
+      {
+        "from": "livingroom",
+        "name": "beerbiscuit",
+        "x": 168,
+        "y": 306,
+        "w": 60,
+        "h": 96,
+        "imgsrc":"/static/3_1/beerbiscuit.png",
+        "bagimg": "/static/prop/feature3/beerbiscuit.png",
+        "isget": false,
+        "text":"树袋熊形状的小熊饼干",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "whistle",
+        "bagimg": "/static/prop/feature3/whistle.png",
+        "isget": false,
+        "text":"口哨糖，可以吹出口哨的声音",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "lollipop",
+        "bagimg": "/static/prop/feature3/lollipop.png",
+        "isget": false,
+        "text":"棒棒糖",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "mimi",
+        "bagimg": "/static/prop/feature3/mimi.png",
+        "isget": false,
+        "text":"咪咪虾条，乐乐小时候会用来摆图案玩",
+        "partner": ""
+      },
+      {
+        "from": "livingroom",
+        "name": "stonechkl",
+        "x": 168,
+        "y": 588,
+        "w": 132,
+        "h": 42,
+        "imgsrc":"/static/3_1/stonechkl.png",
+        "bagimg": "/static/prop/feature3/stonechkl.png",
+        "isget": false,
+        "text":"石头巧克力",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "threedrawing",
+        "x": 1140,
+        "y": 360,
+        "w": 174,
+        "h": 228,
+        "imgsrc":"/static/3_1/threedrawing.png",
+        "bagimg": "/static/prop/feature3/threedrawing.png",
+        "largeimg":"/static/enlarge/three.png",
+        "lw":912,
+        "lh":546,
+        "isget": false,
+        "text":"乐乐小时候照着全家福照片画的涂鸦",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "illrecord",
+        "x": 678,
+        "y": 390,
+        "w": 168,
+        "h": 180,
+        "imgsrc":"/static/3_1/illrecord.png",
+        "bagimg": "/static/prop/feature3/illrecord.png",
+        "isget": false,
+        "text":"我这几年来用的病历",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "smallpic",
+        "bagimg": "/static/prop/feature3/smallpic.png",
+        "largeimg":"/static/enlarge/small.png",
+        "lw":318,
+        "lh":432,
+        "isget": false,
+        "text":"生日纪念照",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "middlepic",
+        "bagimg": "/static/prop/feature3/middlepic.png",
+        "largeimg":"/static/enlarge/middle.png",
+        "lw":432,
+        "lh":318,
+        "isget": false,
+        "text":"生日纪念照",
+        "partner": ""
+      },
+      {
+        "from": "amirror",
+        "name": "xianbei",
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 144,
+        "imgsrc": "/static/3_4/xianbei.png",
+        "bagimg": "/static/prop/feature3/xianbei.png",
+        "show":false,
+        "isget": true,
+        "text":"画着仙贝的便利贴",
+        "partner": ""
+      },
+      {
+        "from": "amirror",
+        "name": "xiaomantou",
+        "x": 0,
+        "y": 0,
+        "w": 138,
+        "h": 132,
+        "imgsrc": "/static/3_4/xiaomantou.png",
+        "bagimg": "/static/prop/feature3/xiaomantou.png",
+        "show":false,
+        "isget": true,
+        "text":"画着旺仔小馒头的便利贴",
+        "partner": ""
+      },
+      {
+        "from": "amirror",
+        "name": "xuegao",
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 132,
+        "imgsrc": "/static/3_4/xuegao.png",
+        "bagimg": "/static/prop/feature3/xuegao.png",
+        "show":false,
+        "isget": true,
+        "text":"画着雪糕的便利贴",
+        "partner": ""
+      },
+      {
+        "from": "amirror",
+        "name": "guodong",
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 132,
+        "imgsrc": "/static/3_4/guodong.png",
+        "bagimg": "/static/prop/feature3/guodong.png",
+        "show":false,
+        "isget": true,
+        "text":"画着果冻的便利贴",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "snackspic",
+        "x": 406,
+        "y": 249,
+        "w": 1122,
+        "h": 258,
+        "imgsrc":"/static/3_3/snackspic.png",
+        "bagimg": "/static/prop/feature3/snackspic.png",
+        "largeimg":"/static/enlarge/snackspic.png",
+        "lw":1098,
+        "lh":618,
+        "isget": false,
+        "text":"老鼠商人很喜欢我的手工作业，我照着画了一份作留念之后就把作业送给它了！",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "shanzha",
+        "bagimg": "/static/prop/feature3/shanzha.png",
+        "isget": false,
+        "text":"山楂片",
+        "partner": ""
+      },
+      {
+        "from": "momroom",
+        "name": "marrypic",
+        "x": 1403,
+        "y": 353,
+        "w": 90,
+        "h": 66,
+        "imgsrc":"/static/3_4/marrypic.png",
+        "bagimg": "/static/prop/feature3/marrypic.png",
+        "largeimg":"/static/enlarge/marrypic.png",
+        "lw":942,
+        "lh":678,
+        "isget": false,
+        "text":"结婚纪念照",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "mompic",
+        "x": 504,
+        "y": 570,
+        "w": 168,
+        "h": 372,
+        "imgsrc":"/static/3_4/mompic.png",
+        "bagimg": "/static/prop/feature3/mompic.png",
+        "largeimg":"/static/enlarge/mompic.png",
+        "lw":828,
+        "lh":726,
+        "isget": false,
+        "zindex":2,
+        "show":false,
+        "text":"乐乐送给我的礼物",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "admit",
+        "bagimg": "/static/prop/feature3/admit.png",
+        "largeimg":"/static/enlarge/admit.png",
+        "lw":948,
+        "lh":612,
+        "isget": false,
+        "text":"乐乐的大学录取通知书",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "homework",
+        "bagimg": "/static/prop/feature3/homework.png",
+        "largeimg":"/static/enlarge/homework.png",
+        "lw":1146,
+        "lh":696,
+        "isget": false,
+        "text":"",
+        "partner": ""
+      },
+      {
+        "from": "",
+        "name": "rabbitcandy",
+        "bagimg": "/static/prop/feature3/rabbitcandy.png",
+        "isget": false,
+        "text":"大白兔奶糖",
+        "partner": ""
+      }
+    ],
+    "cantGetObjs": [
+      {
+        "from": "kitchen",
+        "name": "refri",
+        "x": 70,
+        "y": 84,
+        "w": 300,
+        "h": 500,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "refriopen",
+        "x": 25,
+        "y": 84,
+        "w": 414,
+        "h": 642,
+        "imgsrc":"/static/3_2/refriopen.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "snacks",
+        "x": 25,
+        "y": 84,
+        "w": 414,
+        "h": 642,
+        "imgsrc":"/static/3_2/snacks.png",
+        "partner": null
+      },
+      {
+        "from": "livingroom",
+        "name": "snacksbox",
+        "x": 170,
+        "y": 462,
+        "w": 140,
+        "h": 54,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "snacksboxopen",
+        "x": 114,
+        "y": 462,
+        "w": 198,
+        "h": 54,
+        "imgsrc":"/static/3_1/snacksboxopen.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "snacksinbox",
+        "x": 185,
+        "y": 432,
+        "w": 108,
+        "h": 54,
+        "imgsrc":"/static/3_1/snacksinbox.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "rightopen",
+        "x": 1140,
+        "y": 342,
+        "w": 354,
+        "h": 246,
+        "imgsrc":"/static/3_1/rightopen.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "leftopen",
+        "x": 180,
+        "y": 390,
+        "w": 954,
+        "h": 198,
+        "imgsrc":"/static/3_1/leftopen.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "downopen",
+        "x": 750,
+        "y": 582,
+        "w": 312,
+        "h": 210,
+        "imgsrc":"/static/3_1/downopen.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "birthpic",
+        "x": 865,
+        "y": 664,
+        "w": 198,
+        "h": 102,
+        "imgsrc":"/static/3_1/birthpic.png",
+        "partner": null
+      },
+      {
+        "from": "livingroom",
+        "name": "dog",
+        "x": 720,
+        "y": 588,
+        "w": 354,
+        "h": 240,
+        "imgsrc":"/static/3_1/dog.png",
+        "partner": "double"
+      },
+      {
+        "from": "",
+        "name": "dog2",
+        "x": 720,
+        "y": 588,
+        "w": 354,
+        "h": 240,
+        "imgsrc":"/static/3_1/dog2.png",
+        "partner": null
+      },
+      {
+        "from": "kitchen",
+        "name": "catclick",
+        "x": 1062,
+        "y": 264,
+        "w": 162,
+        "h": 120,
+        "partner": "smallfish"
+      },
+      {
+        "from": "",
+        "name": "cathavefish",
+        "x": 1062,
+        "y": 264,
+        "w": 162,
+        "h": 120,
+        "imgsrc":"/static/3_2/cathavefish.png",
+        "partner": null
+      },
+      {
+        "from": "bedroom",
+        "name": "bird",
+        "x": 1344,
+        "y": 90,
+        "w": 132,
+        "h": 96,
+        "imgsrc":"/static/3_3/bird.png",
+        "partner": "whistle"
+      },
+      {
+        "from": "",
+        "name": "bird3",
+        "x": 1344,
+        "y": 90,
+        "w": 132,
+        "h": 96,
+        "imgsrc":"/static/3_3/bird3.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "toyboxin",
+        "x": 261,
+        "y": 9,
+        "w": 1404,
+        "h": 498,
+        "imgsrc":"/static/3_3/toyboxin.png",
+        "partner": null
+      },
+      {
+        "from": "ajigsaw",
+        "name": "jigsawclick",
+        "x": 20,
+        "y": 20,
+        "w": 1880,
+        "h": 700,
+        "partner": null
+      },
+      {
+        "from": "livingroom",
+        "name": "bell",
+        "x": 1320,
+        "y": 347,
+        "w": 50,
+        "h": 50,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mmarry",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/mmarry.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mthree",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/mthree.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "msmall",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/msmall.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "millrecord",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/millrecord.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mmiddle",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/mmiddle.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mhomework",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/mhomework.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "madmit",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/madmit.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mmompic",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "imgsrc":"/static/3_5/mmompic.png",
+        "zindex":-1,
+        "partner": null
+      },
+      {
+        "from": "memorybg1",
+        "name": "mmarryc",
+        "x": 24,
+        "y": 18,
+        "w": 941,
+        "h": 679,
+        "partner": "marrypic"
+      },
+      {
+        "from": "memorybg1",
+        "name": "mthreec",
+        "x": 971,
+        "y": 251,
+        "w": 912,
+        "h": 546,
+        "partner": "threedrawing"
+      },
+      {
+        "from": "memorybg2",
+        "name": "msmallc",
+        "x": 107,
+        "y": 108,
+        "w": 307,
+        "h": 420,
+        "partner": "smallpic"
+      },
+      {
+        "from": "memorybg2",
+        "name": "millrecordc",
+        "x": 1134,
+        "y": 443,
+        "w": 108,
+        "h": 138,
+        "partner": "illrecord"
+      },
+      {
+        "from": "memorybg2",
+        "name": "mmiddlec",
+        "x": 1344,
+        "y": 390,
+        "w": 419,
+        "h": 306,
+        "partner": "middlepic"
+      },
+      {
+        "from": "memorybg3",
+        "name": "mhomeworkc",
+        "x": 58,
+        "y": 147,
+        "w": 1084,
+        "h": 615,
+        "partner": "homework"
+      },
+      {
+        "from": "memorybg4",
+        "name": "madmitc",
+        "x": 96,
+        "y": 137,
+        "w": 948,
+        "h": 613,
+        "partner": "admit"
+      },
+      {
+        "from": "memorybg4",
+        "name": "mmompicc",
+        "x": 1044,
+        "y": 76,
+        "w": 749,
+        "h": 686,
+        "partner": "mompic"
+      },
+      {
+        "from": "amirror",
+        "name": "mominmirror1",
+        "x": 672,
+        "y": 48,
+        "w": 642,
+        "h": 702,
+        "imgsrc":"/static/3_4/mominmirror1.png",
+        "partner": null
+      },
+      {
+        "from": "",
+        "name": "mominmirror2",
+        "x": 672,
+        "y": 48,
+        "w": 642,
+        "h": 702,
+        "imgsrc":"/static/3_4/mominmirror2.png",
+        "partner": null
+      },
+      {
+        "from": "amirror",
+        "name": "kuang",
+        "x": 672,
+        "y": 48,
+        "w": 642,
+        "h": 702,
+        "imgsrc":"/static/3_4/kuang.png",
+        "partner": null
+      },
+      {
+        "from": "amirror",
+        "name": "xianbeic",
+        "x": 1164,
+        "y": 606,
+        "w": 150,
+        "h": 144,
+        "partner": "xianbei"
+      },
+      {
+        "from": "amirror",
+        "name": "xiaomantouc",
+        "x": 1164,
+        "y": 48,
+        "w": 138,
+        "h": 132,
+        "partner": "xiaomantou"
+      },
+      {
+        "from": "amirror",
+        "name": "xuegaoc",
+        "x": 672,
+        "y": 618,
+        "w": 150,
+        "h": 132,
+        "partner": "xuegao"
+      },
+      {
+        "from": "amirror",
+        "name": "guodongc",
+        "x": 672,
+        "y": 48,
+        "w": 150,
+        "h": 132,
+        "partner": "guodong"
+      },
+      {
+        "from": "momroom",
+        "name": "coloregg",
+        "x": 870,
+        "y": 0,
+        "w": 60,
+        "h": 52,
+        "partner": null
+      },
+      {
+        "from": "bedroom",
+        "name": "bookgame",
+        "x": 1450,
+        "y": 300,
+        "w": 120,
+        "h": 120,
+        "partner": null
+      },
+      {
+        "from": "bedroom",
+        "name": "notegame",
+        "x": 1060,
+        "y": 417,
+        "w": 220,
+        "h": 60,
+        "partner": null
+      },
+      {
+        "from": "end11",
+        "name": "bookpiece",
+        "x": 1020,
+        "y": 0,
+        "w": 636,
+        "h": 660,
+        "imgsrc":"/static/museum/bookpiece.gif",
+        "partner": null
+      },
+      {
+        "from": "end31",
+        "name": "upstair",
+        "x": 1080,
+        "y": 0,
+        "w": 744,
+        "h": 738,
+        "imgsrc":"/static/museum/upstair.png",
+        "partner": null
+      },
+      {
+        "from": "end4",
+        "name": "endselect",
+        "x": 1520,
+        "y": 840,
+        "w": 400,
+        "h": 240,
+        "partner": null
+      }
+    ],
+    "effects":[
+      {
+        "from":"",
+        "name":"effect11",
+        "imgsrc":"/static/3_5/effect1_1.png"
+      },
+      {
+        "from":"",
+        "name":"effect12",
+        "imgsrc":"/static/3_5/effect1_2.png"
+      },
+      {
+        "from":"",
+        "name":"effect21",
+        "imgsrc":"/static/3_5/effect2_1.png"
+      },
+      {
+        "from":"",
+        "name":"effect22",
+        "imgsrc":"/static/3_5/effect2_2.png"
+      },
+      {
+        "from":"",
+        "name":"effect23",
+        "imgsrc":"/static/3_5/effect2_3.png"
+      },
+      {
+        "from":"",
+        "name":"effect3",
+        "imgsrc":"/static/3_5/effect3.png"
+      },
+      {
+        "from":"",
+        "name":"effect41",
+        "imgsrc":"/static/3_5/effect4_1.png"
+      },
+      {
+        "from":"",
+        "name":"effect42",
+        "imgsrc":"/static/3_5/effect4_2.png"
+      }
+    ],
+    "jigsawobjs":[
+      {
+        "from": "",
+        "name": "dbeer",
+        "x": 0,
+        "y": 0,
+        "rx":807,
+        "ry":352,
+        "w": 174,
+        "h": 174,
+        "imgsrc":"/static/3_1/jigsaw/dbeer.png",
+        "index": 0,
+        "zindex":0,
+        "canmove":true,
+        "pindex":7
+      },
+      {
+        "from": "",
+        "name": "dblack",
+        "x": 0,
+        "y": 0,
+        "rx":647,
+        "ry":527,
+        "w": 234,
+        "h": 174,
+        "imgsrc":"/static/3_1/jigsaw/dblack.png",
+        "index": 1,
+        "zindex":0,
+        "canmove":true,
+        "pindex":5
+      },
+      {
+        "from": "",
+        "name": "dpink",
+        "x": 0,
+        "y": 0,
+        "rx":881,
+        "ry":527,
+        "w": 246,
+        "h": 174,
+        "imgsrc":"/static/3_1/jigsaw/dpink.png",
+        "index": 2,
+        "zindex":0,
+        "canmove":true,
+        "pindex":4
+      },
+      {
+        "from": "",
+        "name": "dwhite",
+        "x": 0,
+        "y": 0,
+        "rx":419,
+        "ry":527,
+        "w": 228,
+        "h": 174,
+        "imgsrc":"/static/3_1/jigsaw/dwhite.png",
+        "index": 3,
+        "zindex":0,
+        "canmove":true,
+        "pindex":3
+      },
+      {
+        "from": "",
+        "name": "dmimi",
+        "x": 0,
+        "y": 0,
+        "rx":1152,
+        "ry":143,
+        "w": 258,
+        "h": 222,
+        "imgsrc":"/static/3_1/jigsaw/dmimi.png",
+        "index": 4,
+        "zindex":0,
+        "canmove":true,
+        "pindex":10
+      },
+      {
+        "from": "",
+        "name": "dstone",
+        "x": 0,
+        "y": 0,
+        "rx":1060,
+        "ry":544,
+        "w": 444,
+        "h": 162,
+        "imgsrc":"/static/3_1/jigsaw/dstone.png",
+        "index": 5,
+        "zindex":0,
+        "canmove":true,
+        "pindex":11
+      },
+      {
+        "from": "",
+        "name": "dlolipop",
+        "x": 0,
+        "y": 0,
+        "rx":665,
+        "ry":263,
+        "w": 120,
+        "h": 264,
+        "imgsrc":"/static/3_1/jigsaw/dlolipop.png",
+        "index": 6,
+        "zindex":0,
+        "canmove":true,
+        "pindex":9
+      },
+      {
+        "from": "",
+        "name": "dshanzha",
+        "x": 0,
+        "y": 0,
+        "rx":1319,
+        "ry":149,
+        "w": 90,
+        "h": 90,
+        "imgsrc":"/static/3_1/jigsaw/dshanzha.png",
+        "index": 7,
+        "zindex":0,
+        "canmove":true,
+        "pindex":21
+      },
+      {
+        "from": "",
+        "name": "drabbit",
+        "x": 0,
+        "y": 0,
+        "rx":418,
+        "ry":89,
+        "w": 300,
+        "h": 210,
+        "imgsrc":"/static/3_1/jigsaw/drabbit.png",
+        "index": 8,
+        "zindex":0,
+        "canmove":true
+      },
+      {
+        "from": "",
+        "name": "dmoguli",
+        "x": 0,
+        "y": 0,
+        "rx":1175,
+        "ry":376,
+        "w": 162,
+        "h": 210,
+        "imgsrc":"/static/3_1/jigsaw/dmoguli.png",
+        "index": 9,
+        "zindex":0,
+        "canmove":true,
+        "pindex":6
+      },
+      {
+        "from": "",
+        "name": "dmilk",
+        "x": 418,
+        "y": 95,
+        "rx":418,
+        "ry":95,
+        "w": 1080,
+        "h": 606,
+        "imgsrc":"/static/3_1/jigsaw/dmilk.png",
+        "index": 10,
+        "zindex":-1,
+        "canmove":false,
+        "pindex":2
+      },
+      {
+        "from": "",
+        "name": "dwhistle",
+        "x": 50,
+        "y": 50,
+        "rx":-100,
+        "ry":-100,
+        "w": 102,
+        "h": 102,
+        "imgsrc":"/static/3_1/jigsaw/dwhistle.png",
+        "index": 11,
+        "zindex":0,
+        "canmove":false,
+        "pindex":8
+      },
+      {
+        "from": "",
+        "name": "dsmallfish",
+        "x": 50,
+        "y": 50,
+        "rx":-100,
+        "ry":-100,
+        "w": 258,
+        "h": 108,
+        "imgsrc":"/static/3_1/jigsaw/dsmallfish.png",
+        "index": 12,
+        "zindex":0,
+        "canmove":false,
+        "pindex":0
+      },
+      {
+        "from": "",
+        "name": "ddouble",
+        "x": 50,
+        "y": 50,
+        "rx":-100,
+        "ry":-100,
+        "w": 696,
+        "h": 114,
+        "imgsrc":"/static/3_1/jigsaw/ddouble.png",
+        "index": 13,
+        "zindex":0,
+        "canmove":false,
+        "pindex":1
+      }
+    ],
+    "instru": [
+      {
+        "from": "kitchen",
+        "name": "walldrawsay",
+        "x": 1260,
+        "y": 0,
+        "w": 640,
+        "h": 400,
+        "text": [
+          "乐乐小时候喜欢在这里画画，但是太容易被油烟弄脏了。",
+          "重画了好几次之后他就干脆漆成了现在的颜色，挺好看的。"
+        ]
+      },
+      {
+        "from": "apenguinbox",
+        "name": "pwsay",
+        "x": 657,
+        "y": 597,
+        "w": 656,
+        "h": 190,
+        "text": [
+          "啊，这格我用乐乐的生日来作密码来着……"
+        ]
+      },
+      {
+        "from": "livingroom",
+        "name": "notesay",
+        "x": 594,
+        "y": 270,
+        "w": 60,
+        "h": 54,
+        "text": [
+          "乐乐：妈妈记得帮我喂一下家里的小动物！",
+          "我还真忘了这件事！先去喂了吧……"
+        ]
+      }
+    ]
+  }
